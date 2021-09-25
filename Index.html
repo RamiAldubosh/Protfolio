@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                  <a href="index.html">Home</a>
+                </div>  
+
+                <div class="nav-link-wrapper">    
+                    <a href="about.html">About</a>
+                </div>
+                <div class="nav-link-wrapper">    
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                      <div>RAMI ALDUBOSH</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="content-wrapper">
+
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                   
+                     <div class="portfolio-img-background" 
+                     style="background-image: url(images/portfolio4.jpg) "></div>
+                     <a rel="url" href="Todo-List/index.html">
+                      <div class="img-text-wrapper">
+                          <div class="logo-wrapper">
+                           
+                              <img src="images/logos/crondose.png">
+                              
+                        </div>
+
+                        <div class="subtitle">
+                            A basic Todo-App <br> where i can add, delete  <br>and scratch items in a Todo List<br>made with HTML,CSS and Javascript
+                        </div>
+                        
+                    </div>
+                </a>
+                </div>
+           
+
+            
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" 
+                        style="background-image: url(images/portfolio5.jpg) "></div>
+                        <a rel="url" href="Tribute Page/index.html">
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/logos/quip.png">
+                            </div>
+
+                            <div class="subtitle">
+                            A simple HTML,CSS tribute page.
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+             
+         
+           
+                <div class="portfolio-item-wrapper">
+                     <div class="portfolio-img-background"
+                      style="background-image: url(images/portfolio2.jpg) "></div>
+                      <a rel="url" href="Quiz App/index.html">
+                      <div class="img-text-wrapper">
+                          <div class="logo-wrapper">
+                              <img src="images/logos/shop-hacker.png">
+                              
+                        </div>
+
+                        <div class="subtitle">
+                            Quiz App <br> you answer a couple of Qusetions and in the <br> End the score will show up<br>made with HTML,CSS and Javascript
+
+                        </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    const protgolioItems= document.querySelectorAll('.portfolio-item-wrapper')
+    protgolioItems.forEach(protfolioItem => {
+        protfolioItem.addEventListener('mouseover',()=>{
+            protfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        protfolioItem.addEventListener('mouseout',()=>{
+            protfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    });
+</script>
+</html>
